@@ -6,3 +6,51 @@ La Programación Orientada a Objetos (POO) es un paradigma de programación ampl
 
 En Java, una clase es una plantilla o un plano que define las propiedades y comportamientos de un objeto. Un objeto, por otro lado, es una instancia de una clase. Aquí tienes un ejemplo de cómo se define una clase en Java:
 
+```java
+public class Coche {
+    // Propiedades
+    private String marca;
+    private String modelo;
+    private int anio;
+
+    // Constructor
+    public Coche(String marca, String modelo, int anio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    }
+
+    // Métodos
+    public void acelerar() {
+        System.out.println("El coche " + marca + " está acelerando...");
+    }
+
+    public void frenar() {
+        System.out.println("El coche " + marca + " está frenando...");
+    }
+
+    // Getters y Setters
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+}
