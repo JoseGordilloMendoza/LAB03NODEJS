@@ -10,6 +10,17 @@
 <body>
     <h1>Archivos Markdown</h1>
     <ul id="file-list"></ul>
+
+    <h2>Crear nuevo archivo Markdown</h2>
+  <form id="create-form">
+    <label for="filename">Nombre del archivo:</label>
+    <input type="text" id="filename" name="filename" required>
+    <br>
+    <label for="content">Contenido:</label>
+    <textarea id="content" name="content" rows="5" required></textarea>
+    <br>
+    <input type="submit" value="Crear">
+  </form>
     
     <script src="code.js"></script>
 </body>
