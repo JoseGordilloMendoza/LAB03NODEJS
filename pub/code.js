@@ -25,3 +25,13 @@ function sendPostRequest(url, data, callback) {
       .catch((error) => console.error(error));
   }
 
+// Función para mostrar la lista de archivos Markdown
+function showFileList(files) {
+  const fileList = document.getElementById('file-list');
+
+  files.forEach((file) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = file;
+    fileList.appendChild(listItem);
+  });
+}
