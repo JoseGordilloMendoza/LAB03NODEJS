@@ -1,3 +1,8 @@
+// Envia la petición get cuando carga la página
+sendGetRequest('/files', function (response) {
+  showFileList(response.files);
+});
+
 // Función para enviar una solicitud GET al servidor
 function sendGetRequest(url, callback) {
     fetch(url)
@@ -19,3 +24,4 @@ function sendPostRequest(url, data, callback) {
       .then((data) => callback(data))
       .catch((error) => console.error(error));
   }
+
