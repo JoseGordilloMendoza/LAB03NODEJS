@@ -1,0 +1,17 @@
+## Ejemplo de lista de tareas usando Markdown
+
+Aquí tenemos una lista de tareas utilizando el formato Markdown:
+
+- [x] Tarea 1: Completada
+- [ ] Tarea 2: Pendiente
+- [ ] Tarea 3: Pendiente
+
+Se puede marcar una tarea como completada colocando una 'x' entre corchetes '[x]' y marcar una tarea como pendiente dejando un espacio en blanco entre corchetes '[ ]'.
+
+## Ejemplo de enlaces e imágenes en Markdown
+
+Podemos agregar enlaces e imágenes en tus documentos Markdown. Aquí tienes algunos ejemplos:
+
+[Enlace a Google](https://www.google.com)
+
+![Logo de Markdown](https://markdown-here.com/img/icon256.png)
