@@ -15,3 +15,9 @@ Podemos agregar enlaces e imágenes en tus documentos Markdown. Aquí tienes alg
 [Enlace a Google](https://www.google.com)
 
 ![Logo de Markdown](https://markdown-here.com/img/icon256.png)
+
+## Ejemplo de bloques de código en línea
+
+Se pueden resaltar fragmentos de código en línea utilizando comillas invertidas (`) en Markdown. Aquí un ejemplo:
+
+El comando `print("Hola, mundo!")` muestra un mensaje en la consola.
