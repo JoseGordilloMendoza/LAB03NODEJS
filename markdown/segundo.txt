@@ -11,3 +11,14 @@ JavaScript es un lenguaje de programación de alto nivel, interpretado y orienta
 - **Lenguaje de scripting**: JavaScript se utiliza principalmente como un lenguaje de scripting en el lado del cliente. Puede interactuar con el HTML y CSS de una página web para realizar cambios dinámicos y responder a eventos del usuario.
 
 - **Versatilidad**: JavaScript se puede utilizar tanto en el desarrollo web (frontend y backend) como en otros entornos, como aplicaciones de escritorio o desarrollo de juegos.
+## Ejemplo básico
+
+Aquí hay un ejemplo básico de código JavaScript que muestra un saludo en la consola del navegador:
+
+```javascript
+// Definir una función
+function saludar(nombre) {
+  console.log("¡Hola, " + nombre + "!");
+}
+// Llamar a la función
+saludar("Juan");
