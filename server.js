@@ -19,3 +19,14 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
+
+// Ruta para obtener la lista de archivos Markdown disponibles
+app.get('/files', (req, res) => {
+  fs.readdir(__dirname + '/markdown', (err, files) => {
+    if (err) {
+      res.status(500).json({ error: 'Error al leer los archivos Markdown' });
+    } else {
+      res.json({ files: files });
+    }
+  });
+});
