@@ -28,6 +28,7 @@ function sendPostRequest(url, data, callback) {
 // Función para mostrar la lista de archivos Markdown
 function showFileList(files) {
   const fileList = document.getElementById('file-list');
+  fileList.innerHTML = "";
 
   files.forEach((file) => {
     const listItem = document.createElement('li');
