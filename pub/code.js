@@ -11,12 +11,6 @@ function sendGetRequest(url, callback) {
     .catch((error) => console.error(error));
 }
 
-// Función para mostrar el contenido HTML de un archivo Markdown
-      function showMarkdownContent(htmlContent) {
-        const markdownContent = document.getElementById('markdown-content');
-        markdownContent.innerHTML = htmlContent;
-      }
-
 // Función para enviar una solicitud POST al servidor
 function sendPostRequest(url, data, callback) {
     fetch(url, {
@@ -74,4 +68,10 @@ createForm.addEventListener('submit', function (event) {
           showMarkdownContent(response.htmlContent);
         });
       });
+  
+  // Función para mostrar el contenido HTML de un archivo Markdown
+      function showMarkdownContent(htmlContent) {
+        const markdownContent = document.getElementById('markdown-content');
+        markdownContent.innerHTML = htmlContent;
+      }
 });
