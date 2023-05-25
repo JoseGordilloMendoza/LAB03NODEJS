@@ -59,7 +59,9 @@ createForm.addEventListener('submit', function (event) {
       });
     }); 
   }
-  // Manejar el clic en un archivo Markdown de la lista
+});
+
+// Manejar el clic en un archivo Markdown de la lista
       const fileList = document.getElementById('file-list');
       fileList.addEventListener('click', function (event) {
           console.log("funciona :V");
@@ -74,4 +76,3 @@ createForm.addEventListener('submit', function (event) {
         const markdownContent = document.getElementById('markdown-content');
         markdownContent.innerHTML = htmlContent;
       }
-});
