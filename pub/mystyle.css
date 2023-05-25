@@ -1,11 +1,6 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
-h1 {
+#title {
   text-align: center; font-size: 500%; font-family: Impact;
-  color: rgba(0, 0, 0, 0.716);
+  color: rgba(0, 0, 0, 0.913);
 }
 
 h2 {
@@ -32,10 +27,13 @@ input[type="submit"] {
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
 input[type="submit"]:hover {
   background-color: #333;
+  transform: scale(1.5);
+
 }
 
 /* Estilos específicos */
