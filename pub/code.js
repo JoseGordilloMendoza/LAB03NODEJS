@@ -54,7 +54,7 @@ createForm.addEventListener('submit', function (event) {
       console.log(response.message);
       filenameInput.value = '';
       contentInput.value = '';
-      sendGetRequest('/file', function (response) {
+      sendGetRequest('/files', function (response) {
         showFileList(response.files);
       });
     });
