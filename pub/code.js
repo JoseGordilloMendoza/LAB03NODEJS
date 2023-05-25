@@ -11,6 +11,12 @@ function sendGetRequest(url, callback) {
     .catch((error) => console.error(error));
 }
 
+// Función para mostrar el contenido HTML de un archivo Markdown
+      function showMarkdownContent(htmlContent) {
+        const markdownContent = document.getElementById('markdown-content');
+        markdownContent.innerHTML = htmlContent;
+      }
+
 // Función para enviar una solicitud POST al servidor
 function sendPostRequest(url, data, callback) {
     fetch(url, {
@@ -57,6 +63,15 @@ createForm.addEventListener('submit', function (event) {
       sendGetRequest('/files', function (response) {
         showFileList(response.files);
       });
-    });
+    }); 
   }
+  // Manejar el clic en un archivo Markdown de la lista
+      const fileList = document.getElementById('file-list');
+      fileList.addEventListener('click', function (event) {
+          console.log("funciona :V");
+        const filename = event.target.textContent;
+        sendGetRequest(`/gethtml?nombre=${filename}`, function (response) {
+          showMarkdownContent(response.htmlContent);
+        });
+      });
 });
